@@ -16,7 +16,7 @@
         <style>
             html, body {
                 background-color: #2b2b2b;
-                color: #fff;
+                color: #FF5A20;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 font-size: 20px;
@@ -36,12 +36,12 @@
                 margin-bottom: 30px;
             }
             .table{
-                color:#fff;
+                color:#FF5A20;
             }
             .btn-primary {
                 color: #000000;
-                background-color: #13BF05;
-                border-color: #13BF05;
+                background-color: #FF5A20;
+                border-color: #FF5A20;
             }
         </style>
     </head>
