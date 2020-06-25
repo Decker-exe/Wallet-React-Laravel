@@ -43,7 +43,10 @@
                 background-color: #FF5A20;
                 border-color: #FF5A20;
             }
-        </style>
+            #imagen{
+                width: 50px !important;
+            }
+</style>
     </head>
     <body>
         <div class="content">
