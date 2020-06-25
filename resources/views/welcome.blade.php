@@ -15,8 +15,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #2b2b2b;
+                color: #fff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 font-size: 20px;
@@ -34,6 +34,14 @@
             }
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            .table{
+                color:#fff;
+            }
+            .btn-primary {
+                color: #000000;
+                background-color: #13BF05;
+                border-color: #13BF05;
             }
         </style>
     </head>
