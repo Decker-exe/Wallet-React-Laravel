@@ -11,7 +11,7 @@ const Github = () => (
                 </div>
                 <div>
                         
-                        <p >Github</p>
+                        <p >Que onda</p>
                 </div>
 
         </div>

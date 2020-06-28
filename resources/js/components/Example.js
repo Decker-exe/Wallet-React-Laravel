@@ -8,7 +8,7 @@ import url from '../url'
 
 
 export default class Example extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             money: 0.0,
@@ -24,7 +24,7 @@ export default class Example extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    async handleSubmit(e){
+    async handleSubmit(e) {
         e.preventDefault()
         try {
             let config = {
@@ -37,10 +37,10 @@ export default class Example extends Component {
             }
             let res = await fetch(`${url}/api/transfer`, config)
             let data = await res.json()
-            
+
             this.setState({
                 transfers: this.state.transfers.concat(data),
-                money: this.state.money + ( parseInt(data.amount))
+                money: this.state.money + (parseInt(data.amount))
             })
         } catch (error) {
             console.log(error)
@@ -55,7 +55,7 @@ export default class Example extends Component {
         })
     }
 
-    async componentDidMount(){
+    async componentDidMount() {
         try {
             let res = await fetch(`${url}/api/wallet`)
             let data = await res.json()
@@ -74,13 +74,14 @@ export default class Example extends Component {
     render() {
         return (
             <div className="container">
+
                 <div className="row justify-content-center">
                     <div className="col-md-12 m-t-md">
                         <p className={this.state.money < 0 ? 'title text-danger' : 'title'}> $ {this.state.money} </p>
                         <p>"Libertad,Informacion y Desafios"</p>
                     </div>
                     <div className="col-md-12">
-                        <TransactionForm 
+                        <TransactionForm
                             onChange={this.handleChange}
                             onSubmit={this.handleSubmit}
                             form={this.state.form}
@@ -88,13 +89,14 @@ export default class Example extends Component {
                     </div>
                 </div>
                 <div className="m-t-md">
-                    <TransactionList 
+                    <TransactionList
                         transfers={this.state.transfers}
                     />
-                    <Github/>
+                    <Github />
 
                 </div>
-        </div>
+
+            </div>
         );
     }
 }

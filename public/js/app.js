@@ -62521,7 +62521,7 @@ var Github = function Github() {
     target: "_blank"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "https://github.githubassets.com/images/icons/emoji/shipit.png"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Github")));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Que onda")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Github);
@@ -62553,7 +62553,7 @@ var TransactionForm = function TransactionForm(_ref) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     className: "form-control",
-    placeholder: "Description",
+    placeholder: "Ingrese gasto o venta",
     name: "description",
     onChange: onChange,
     value: form.description

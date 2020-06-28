@@ -41,11 +41,20 @@ class TransferController extends Controller
         $wallet->update();
         
         $transfer = new Transfer();
+        //        $transfer->description = 'Que onda';
+        //$transfer->amount = 5000;
         $transfer->description = $request->description;
         $transfer->amount = $request->amount;
         $transfer->wallet_id = $wallet->id;
-        $transfer->save();
-        return response()->json($transfer, 201);
+        if (($transfer->description = $request->description)==''or ($transfer->amount = $request->amount)=='') {
+            $transfer->description = 'Test2';
+            $transfer->amount ='1';
+        }else{
+            $transfer->save();
+            return response()->json($transfer, 201);
+        }
+        
+       
     }
 
     /**
