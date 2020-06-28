@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
 
+
 const Github = () => (
-        <a href="https://github.com/Decker-exe/Wallet-React-Laravel" target="_blank">
-             <p>Github</p>
-        </a>
-   
+        <div>
+
+                <div>
+                        <a href="https://github.com/Decker-exe/Wallet-React-Laravel" target="_blank">
+                                <img src='https://github.githubassets.com/images/icons/emoji/shipit.png' />
+                        </a>
+                </div>
+                <div>
+                        
+                        <p >Github</p>
+                </div>
+
+        </div>
 )
 export default Github

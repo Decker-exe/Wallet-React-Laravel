@@ -62516,10 +62516,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Github = function Github() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/Decker-exe/Wallet-React-Laravel",
     target: "_blank"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Github"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://github.githubassets.com/images/icons/emoji/shipit.png"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Github")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Github);
