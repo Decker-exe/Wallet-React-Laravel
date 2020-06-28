@@ -23,6 +23,7 @@ const TransactionForm = ({ onChange, onSubmit, form }) => (
             <input
                 type="text"
                 className="form-control"
+                placeholder="Ingrese un numero"
                 name="amount"
                 onChange={onChange}
                 value={form.amount}
