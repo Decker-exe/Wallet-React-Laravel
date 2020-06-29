@@ -36,10 +36,9 @@ class TransferController extends Controller
      */
     public function store(Request $request)
     {
+
         $wallet = Wallet::find($request->wallet_id);
         $wallet->money = $wallet->money + $request->amount;
-        $wallet->update();
-        
         $transfer = new Transfer();
         //        $transfer->description = 'Que onda';
         //$transfer->amount = 5000;
@@ -50,6 +49,7 @@ class TransferController extends Controller
             $transfer->description = 'Test2';
             $transfer->amount ='1';
         }else{
+            $wallet->update();
             $transfer->save();
             return response()->json($transfer, 201);
         }
