@@ -13,7 +13,7 @@ const TransactionForm = ({ onChange, onSubmit, form }) => (
                 placeholder="Ingrese gasto o venta"
                 name="description"
                 onChange={onChange}
-                value={form.description}
+                value={form.description} required
            />
         </div>
         <div className="input-group mx-sm-2 mb-2">
@@ -26,7 +26,7 @@ const TransactionForm = ({ onChange, onSubmit, form }) => (
                 placeholder="Ingrese un numero"
                 name="amount"
                 onChange={onChange}
-                value={form.amount}
+                value={form.amount} required
             />
         </div>
         <button
