@@ -78,7 +78,6 @@ export default class Example extends Component {
                 <div className="row justify-content-center">
                     <div className="col-md-12 m-t-md">
                         <p className={this.state.money < 0 ? 'title text-danger' : 'title'}> $ {this.state.money} </p>
-                        <p>"Libertad,Informacion y Desafios"</p>
                     </div>
                     <div className="col-md-12">
                         <TransactionForm
